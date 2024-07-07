@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   margin: 0;
@@ -762,18 +764,68 @@ section .title::after {
 
 
 /* footer section starts */
+/* Footer Styles */
 footer {
-  background: #191a31;
-  text-align: center;
-  padding: 2rem 0;
-}
-footer span {
-  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  background: #000000;
   color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
-footer span a {
-  color: #da0416;
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+.footer-content div {
+  flex: 1;
+  margin: 10px;
+}
+.footer-content h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-content ul li {
+  margin: 5px 0;
+}
+.footer-content ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-content ul li a:hover{
+  color:#f1b622 ;
+}
+.footer-social-links a {
+  color: #fff;
+  font-size: 1.3rem;
+  margin: 0 10px;
+}
+.footer-social-links a:hover {
+  color: #f1b622;
+}
+.credit {
+  padding: 1rem 0 0 0;
+  text-align: center;
+  font-size: 1.0rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border-top: 0.1rem solid #fff3;
+}
+.credit a {
+  color: #ffae00;
+}
+.fa {
+  color: #e90606;
+  margin: 0 0.3rem;
+  font-size: 1.0rem;
+  animation: pound 0.35s infinite alternate;
+}
+
 /* footer section ends */
 
 @-webkit-keyframes pound {
