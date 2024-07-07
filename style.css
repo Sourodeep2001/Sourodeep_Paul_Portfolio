@@ -762,91 +762,20 @@ section .title::after {
 
 
 /* footer section starts */
-.footer {
-  min-height: auto;
-  padding-top: 0;
-  background: rgb(0, 0, 0);
-  padding-bottom: 10px;
-}
-.footer .box-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.footer .box-container .box {
-  flex: 1 1 10%;
-  margin: 1.2rem;
-  min-width: 150px; /* Ensures the boxes have a minimum width */
-}
-.footer .box-container .box h3 {
-  font-size: 1.5rem; /* Reduced font size */
-  color: #fff;
-  padding-bottom: 1rem;
-  font-weight: 500;
-}
-.footer .box-container .box p {
-  font-size: 1rem; /* Reduced font size */
-  color: #ccc;
-  padding: 0.7rem 0;
-  text-transform: none;
-}
-.footer .box-container .box p i {
-  padding-right: 1rem;
-  color: #ffae00;
-}
-.footer .box-container .box a {
-  font-size: 1rem; /* Reduced font size */
-  color: rgb(238, 238, 238);
-  padding: 0.3rem 0;
-  display: block;
-}
-.footer .box-container .box a:hover {
-  color: #ffae00;
-}
-.footer .box-container .box .share {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem 0;
-}
-.footer .box-container .box .share a {
-  height: 3rem; /* Reduced size */
-  width: 3rem; /* Reduced size */
-  padding: 0.6rem; /* Adjusted padding */
+footer {
+  background: #191a31;
   text-align: center;
-  border-radius: 1.5rem;
-  font-size: 1.2rem; /* Reduced font size */
-  margin-right: 0.8rem; /* Adjusted margin */
-  transition: 0.2s;
-  background: rgb(230, 230, 230);
-  color: #02094b;
-  border: none;
+  padding: 2rem 0;
 }
-.footer .box-container .box .share a:hover {
-  background: transparent;
-  transform: scale(0.98);
-  border: 0.1rem solid rgb(180, 178, 178);
-  color: #ffae00;
-}
-.footer .credit {
-  padding: 1rem 0 0 0;
-  text-align: center;
-  font-size: 1.2rem; /* Reduced font size */
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
-  
+footer span {
+  font-size: 1.4rem;
   color: #fff;
-  border-top: 0.1rem solid #fff3;
 }
-.footer .credit a {
-  font-size: 1.2rem;
-  color: #ffae00;
+footer span a {
+  color: #da0416;
 }
-.footer .fa {
-  color: #e90606;
-  margin: 0 0.3rem;
-  font-size: 1.2rem; /* Reduced font size */
-  animation: pound 0.35s infinite alternate;
-}
+/* footer section ends */
+
 @-webkit-keyframes pound {
   to {
     transform: scale(1.1);
