@@ -437,7 +437,7 @@ section .title::after {
   margin: 0 5px;
   outline: none !important;
   border-radius: 50%;
-  border: 2px solid #888c8d !important;
+  border: 2px solid #1b1b1b !important;
   transition: background 0.2s ease;
 }
 
@@ -472,12 +472,13 @@ section .title::after {
   text-align: center;
   box-shadow: 0 4px 8px rgba(10, 20, 20, 0.5);
   transition: all 0.3s ease;
-  width: 300px;  
-  height: 350px; 
+  width: 300px;
+  height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
   margin: auto;
+  position: relative; /* Added to position the description */
 }
 
 .projects .carousel .card:hover {
@@ -528,9 +529,29 @@ section .title::after {
   transition: background 0.3s ease;
 }
 
-.projects .carousel .card a:hover {
-  background: #0d7ac4;
+/* Description styles */
+.projects .carousel .card .description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  text-align: center;
+  z-index: 10; /* Ensure it is on top */
+  width: 90%; /* Adjust as needed */
 }
+
+.projects .carousel .card:hover .description {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 .owl-dots {
   text-align: center;
