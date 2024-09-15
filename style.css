@@ -44,6 +44,7 @@ section {
 .skills,
 .education,
 .certificates,
+.courses,
 .projects,
 .contact,
 .footer
@@ -96,10 +97,10 @@ section .title::after {
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: 30px 0;
+  padding: 20px 0;
   transition: all 0.3s ease;
   font-family: inherit;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   display: flex;
   justify-content: space-between;  /* Added for alignment */
@@ -108,7 +109,7 @@ section .title::after {
 
 .navbar.sticky {
   padding: 15px 0;
-  background: #0a0a0ad7;
+  background: #0a0a0aec;
 }
 
 .navbar .max-width {
@@ -137,16 +138,16 @@ section .title::after {
   color: #ffffffec;
   font-size: 13px;
   font-weight: 500;
-  margin-left: 25px;
+  margin-left: 12px;
   transition: color 0.3s ease;
 }
 
 .navbar .menu li a:hover {
-   color: #ecee67;
+   color: #e8eb43;
 }
 
 .navbar.sticky .menu li a:hover {
-  color: #ecee67;
+  color: #e8eb43;
 }
 
 /*  Menu Btn  */
@@ -155,11 +156,6 @@ section .title::after {
   font-size: 23px;
   cursor: pointer;
   display: none;
-}
-.menu-btn :hover
-{
-  color: #ecee67;
-  
 }
 
 .scroll-up-btn {
@@ -541,6 +537,59 @@ p {
 .owl-dot.active,
 .owl-dot:hover {
   background: #aac2df !important;
+}
+
+/*  Courses */
+
+.courses {
+  padding: 50px;
+  background: radial-gradient(#e06f6fc2, rgb(29, 28, 29));
+}
+
+.course .title {
+  text-align: center;
+  font-size: 2.5em; 
+  font-weight: 500; 
+  color: #070707; 
+  margin-bottom: 20px; 
+  padding-bottom: 20px; 
+  position: relative; 
+}
+
+.course-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  background-color: #f1cf3ac4;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(7, 7, 7, 0.685);
+  border-radius: 10px;
+  width: 300px;
+  margin: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
 }
 
 
